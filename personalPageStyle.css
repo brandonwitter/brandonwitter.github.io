@@ -134,11 +134,11 @@ div.welcomeMessageDiv {
 h1.welcomeMessageHeader {
     font-size: 24px;
     font-family: Arial, sans-serif;
-    font-weight: normal;
-    color: #1c2b2d;
+    color: #1f6f8b;
 }
 
 p.welcomeMessageContent {
     font-size: 18px;
     font-family: Arial, sans-serif;
+    color: #1c2b2d;
 }
