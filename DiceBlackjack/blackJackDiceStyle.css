@@ -1,0 +1,236 @@
+body {
+    background-color: #ffdab3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+div.banner {
+    width: 820px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to bottom left, #880000, #ccc);
+}
+
+div.hideInstructions {
+    width: 820px;
+    height: 600px;
+    margin: auto;
+}
+
+div.gameScreen {
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    background-image: url("images/woodBackLight.jpg");
+    border: 10px solid #000;
+}
+
+div.buttonsDiv {
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:800px;
+    background-color: #ccc;
+    border-left: 10px solid #000; 
+    border-right: 10px solid #000;
+    border-bottom: 10px solid #000;
+}
+
+div.rollDiv {
+    position: absolute;
+    width: 550px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    background-image: url("images/woodBackLight.jpg");
+    text-align: center;
+    padding-top: 50px; 
+}
+
+div.pastRollsDiv {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    background-color: #777;
+}
+
+div.dealerPastRollsDiv {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #777;
+}
+
+div.playerScore {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #006000;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.playerScoreLose {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #800000;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.dealerScore {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    background-color: #006000;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.dealerScoreLose {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    background-color: #800000;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.rollValDiv {
+    position: absolute;
+    width: 550px;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #777;
+    text-align: center;
+    color: #eee;
+}
+
+div.winner {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: #3c3;
+    text-align: center;
+    left: 250px;
+    top: 175px;
+    animation-name: winLoseMess;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+div.loser {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: #f30;
+    text-align: center;
+    left: 250px;
+    top: 175px;
+    animation-name: winLoseMess;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+div.instructionDiv {
+    width: 820px;
+    margin: auto;
+    text-align: left;
+}
+
+div.changeUser {
+    font-size: 32px;
+    text-align: center;
+}
+
+@keyframes winLoseMess {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+img.diceImg {
+    width: 250px;
+    height: 250px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
+
+img.pastRollDice {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+div.scoreTitle {
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div.score {
+    font-size: 128px;
+    text-align: center;
+}
+
+h1.winOrLose {
+    font-size: 20px;
+}
+
+h3.title {
+    font-size: 64px;
+    color: #eee;
+}
+
+h2.subtitle {
+    font-size: 32px;
+    color: #eee;
+}
