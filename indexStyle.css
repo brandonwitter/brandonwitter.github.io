@@ -35,3 +35,10 @@ a.typewrite {
     text-decoration: none;
     color: #ffc0c2;
 }
+
+img.bannerLogo {
+    position: absolute;
+    width: 10%;
+    left: 2%;
+    top: 2%;
+}
