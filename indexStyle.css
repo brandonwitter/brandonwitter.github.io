@@ -1,0 +1,37 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #0e3150;
+}
+
+div.bannerDiv {
+    width: 100%;
+    position: relative;
+}
+
+img.bannerImg {
+    width: 100%;
+}
+
+h1.bannerWelcome {
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    font-size: 4vw;
+    left: 25%;
+    top: 35%;
+}
+
+h1.bannerTypewrite {
+    color: #ffc0c2;
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    font-size: 2vw;
+    left: 25.2%;
+    top: 50%;
+}
+
+a.typewrite {
+    text-decoration: none;
+    color: #ffc0c2;
+}
